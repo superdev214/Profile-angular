@@ -23,8 +23,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/CSS/icofont.min.css"
             ],
+          
             "scripts": []
           },
           "configurations": {

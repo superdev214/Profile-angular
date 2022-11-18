@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      screen:{
+        '2xl' : { 'col' : '(min-width:1400px'},
+      },
+    },
   },
   plugins: [],
 }
