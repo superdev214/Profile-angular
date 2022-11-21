@@ -139,8 +139,7 @@
       <i
         class="icofont-simple-smile text-[#18d26e] absolute top-[-25px] left-[30%] translate-x-[50%] text-[24px] p-[12px] rounded-[50px] text-[#18d26e] bg-white/[.1]"
       ></i>
-      <!-- <Counter ed="23" index={1}></Counter> -->
-      <!-- <app-counter [digit]="83" [duration]="1000"></app-counter> -->
+     <app-counter [maxValue]="23" [time]="100"></app-counter>
       <p class="text-[20px] pb-[1rem]">Happy Client</p>
     </div>
     <div
@@ -149,7 +148,7 @@
       <i
         class="icofont-document-folder text-[#18d26e] absolute top-[-25px] left-[30%] translate-x-[50%] text-[24px] p-[12px] rounded-[50px] text-[#18d26e] bg-white/[.1]"
       ></i>
-      <!-- <Counter ed="42" index={2}></Counter> -->
+      <app-counter [maxValue]="42" [time]="50"></app-counter>
       <p class="text-[20px] pb-[1rem]">Projects</p>
     </div>
     <div
@@ -158,7 +157,7 @@
       <i
         class="icofont-live-support text-[#18d26e] absolute top-[-25px] left-[30%] translate-x-[50%] text-[24px] p-[12px] rounded-[50px] text-[#18d26e] bg-white/[.1]"
       ></i>
-      <!-- <Counter ed="1463" index={3}></Counter> -->
+      <app-counter [maxValue]="1463" [time]="1"></app-counter>
       <p class="text-[20px] pb-[1rem]">Hours of Support</p>
     </div>
     <div
@@ -167,7 +166,7 @@
       <i
         class="icofont-users-alt-5 text-[#18d26e] absolute top-[-25px] left-[30%] translate-x-[50%] text-[24px] p-[12px] rounded-[50px] text-[#18d26e] bg-white/[.1]"
       ></i>
-      <!-- <Counter ed="3" index={4} /> -->
+      <app-counter [maxValue]="3" [time]="500"></app-counter>
       <p class="text-[20px] pb-[1rem]">Hard Workers</p>
     </div>
   </div>
@@ -178,6 +177,7 @@
   >
     SKILLS
   </h2>
+  <!-- Progress bar -->
   <div class="grid grid-cols-12">
     <div class="col-span-6 p-[12px]">
       <app-skill title="REACT JS" [maxValue]="100"></app-skill>

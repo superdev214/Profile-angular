@@ -13,6 +13,7 @@ import { SkillComponent } from './component/skill/skill.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { CounterComponent } from './component/counter/counter.component';
 
 const helloState = { name: "hello", url: "/", component: HomeComponent };
 const aboutState = { name: "about", url: "/About", component: AboutComponent };
@@ -22,7 +23,8 @@ const aboutState = { name: "about", url: "/About", component: AboutComponent };
     HomeComponent,
     AboutComponent,
     NavComponent,
-    SkillComponent
+    SkillComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,8 @@ const aboutState = { name: "about", url: "/About", component: AboutComponent };
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
+
 export class AppModule { }
