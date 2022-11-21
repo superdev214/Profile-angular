@@ -7,14 +7,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { NavComponent } from './component/nav/nav.component';
 import { SkillComponent } from './component/skill/skill.component';
 
-
-
-
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CounterComponent } from './component/counter/counter.component';
-
 const helloState = { name: "hello", url: "/Home", component: HomeComponent };
 const aboutState = { name: "about", url: "/About", component: AboutComponent };
 @NgModule({
@@ -29,7 +23,6 @@ const aboutState = { name: "about", url: "/About", component: AboutComponent };
   imports: [
     BrowserModule,
     UIRouterModule.forRoot({ states: [helloState, aboutState], useHash: true }),
-    MatSlideToggleModule,
     MatProgressBarModule,
 
   ],
