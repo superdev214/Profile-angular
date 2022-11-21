@@ -1,0 +1,9 @@
+<div class="w-[100%] p-0">
+  <span class="text-white">{{ title }}</span>
+  <span class="float-right text-white">{{ curValue }}%</span>
+  <mat-progress-bar
+    mode="determinate"
+    class="bg-red-500"
+    [value]="curValue"
+  ></mat-progress-bar>
+</div>

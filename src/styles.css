@@ -4,3 +4,4 @@
 @tailwind utilities;
 
 @import "./assets/CSS/icofont.min.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
