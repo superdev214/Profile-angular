@@ -1,3 +1,5 @@
 export class GlobalVariable {
-    public activeNavItem : string = "Home";
+    public static navItem: string = "Home";
+      
+
 }

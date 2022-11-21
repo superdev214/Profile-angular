@@ -15,7 +15,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CounterComponent } from './component/counter/counter.component';
 
-const helloState = { name: "hello", url: "/", component: HomeComponent };
+const helloState = { name: "hello", url: "/Home", component: HomeComponent };
 const aboutState = { name: "about", url: "/About", component: AboutComponent };
 @NgModule({
   declarations: [

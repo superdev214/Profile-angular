@@ -1,38 +1,61 @@
 <nav class="relative">
-  <a
+  <!-- <a
     uiSref="hello"
     class="before:content-[''] before:bg-green-500 before:absolute before:bottom-[-2px] left-[0px] before:w-0 before:invisible before:transition-all before:delay-150 before:ease-in-out before:delay-0 before:h-[2px] text-white/[.8] font-[Poppins,sans-serif] text-[16px] hover:text-white hover:before:visible hover:before:w-[30px] cursor-pointer"
-    
-    >
+    [ngClass]="
+      curNavItem === 'Home'
+        ? 'before:visible before:w-[30px]'
+        : 'before:invisible'
+    "
+      {{curNavItem == 'Home' ? 'before:visible before:w-[30px]' : 'before:invisible'}}
+  > -->
+  <a
+  uiSref="hello"
+  class="before:content-[''] before:bg-green-500 before:absolute before:bottom-[-2px] left-[0px] before:w-0  before:transition-all before:delay-150 before:ease-in-out before:delay-0 before:h-[2px] text-white/[.8] font-[Poppins,sans-serif] text-[16px] hover:text-white hover:before:visible hover:before:w-[30px] cursor-pointer
+  {{curNavItem == 'Home' ? 'before:visible before:w-[30px] !important' : 'before:invisible'}}
+  "
+  (click)="setNavItem('Home')"
+>
     Home
   </a>
   <a
     uiSref="about"
-    class="before:content-[''] before:bg-green-500 before:absolute before:bottom-[-2px] left-[0px] before:w-0 before:invisible before:transition-all before:delay-150 before:ease-in-out before:delay-0 before:h-[2px] text-white/[.8] font-[Poppins,sans-serif] text-[16px] hover:text-white hover:before:visible hover:before:w-[30px] ml-[30px] cursor-pointer"
+    class="before:content-[''] before:bg-green-500 before:absolute  before:bottom-[-2px] left-[0px] before:w-0  before:transition-all before:delay-150 before:ease-in-out before:delay-0 before:h-[2px] text-white/[.8] font-[Poppins,sans-serif] text-[16px] hover:text-white hover:before:visible hover:before:w-[30px] ml-[30px] cursor-pointer
+    {{curNavItem == 'About' ? 'before:visible before:w-[30px] !important' : 'before:invisible'}}
+    "  (click)="setNavItem('About')"
   >
     About
   </a>
   <a
     uiSref="hello"
-    class="before:content-[''] before:bg-green-500 before:absolute before:bottom-[-2px] left-[0px] before:w-0 before:invisible before:transition-all before:delay-150 before:ease-in-out before:delay-0 before:h-[2px] text-white/[.8] font-[Poppins,sans-serif] text-[16px] hover:text-white hover:before:visible hover:before:w-[30px] ml-[30px] cursor-pointer"
+    class="before:content-[''] before:bg-green-500 before:absolute before:bottom-[-2px] left-[0px] before:w-0 before:invisible before:transition-all before:delay-150 before:ease-in-out before:delay-0 before:h-[2px] text-white/[.8] font-[Poppins,sans-serif] text-[16px] hover:text-white hover:before:visible hover:before:w-[30px] ml-[30px] cursor-pointer
+    {{curNavItem == 'Home' ? 'before:visible before:w-[30px] !important' : 'before:invisible'}}
+    "  (click)="setNavItem('Home')"
+    
   >
     Resume
   </a>
   <a
     uiSref="hello"
-    class="before:content-[''] before:bg-green-500 before:absolute before:bottom-[-2px] left-[0px] before:w-0 before:invisible before:transition-all before:delay-150 before:ease-in-out before:delay-0 before:h-[2px] text-white/[.8] font-[Poppins,sans-serif] text-[16px] hover:text-white hover:before:visible hover:before:w-[30px] ml-[30px] cursor-pointer"
+    class="before:content-[''] before:bg-green-500 before:absolute before:bottom-[-2px] left-[0px] before:w-0 before:invisible before:transition-all before:delay-150 before:ease-in-out before:delay-0 before:h-[2px] text-white/[.8] font-[Poppins,sans-serif] text-[16px] hover:text-white hover:before:visible hover:before:w-[30px] ml-[30px] cursor-pointer
+    {{curNavItem == 'Home' ? 'before:visible before:w-[30px] !important' : 'before:invisible'}}
+    "  (click)="setNavItem('Home')"
   >
     Services
   </a>
   <a
     uiSref="hello"
-    class="before:content-[''] before:bg-green-500 before:absolute before:bottom-[-2px] left-[0px] before:w-0 before:invisible before:transition-all before:delay-150 before:ease-in-out before:delay-0 before:h-[2px] text-white/[.8] font-[Poppins,sans-serif] text-[16px] hover:text-white hover:before:visible hover:before:w-[30px] ml-[30px] cursor-pointer"
+    class="before:content-[''] before:bg-green-500 before:absolute before:bottom-[-2px] left-[0px] before:w-0 before:invisible before:transition-all before:delay-150 before:ease-in-out before:delay-0 before:h-[2px] text-white/[.8] font-[Poppins,sans-serif] text-[16px] hover:text-white hover:before:visible hover:before:w-[30px] ml-[30px] cursor-pointer
+    {{curNavItem == 'Home' ? 'before:visible before:w-[30px] !important' : 'before:invisible'}}
+    "  (click)="setNavItem('Home')"
   >
     Portfolio
   </a>
   <a
     uiSref="hello"
-    class="before:content-[''] before:bg-green-500 before:absolute before:bottom-[-2px] left-[0px] before:w-0 before:invisible before:transition-all before:delay-150 before:ease-in-out before:delay-0 before:h-[2px] text-white/[.8] font-[Poppins,sans-serif] text-[16px] hover:text-white hover:before:visible hover:before:w-[30px] ml-[30px] cursor-pointer"
+    class="before:content-[''] before:bg-green-500 before:absolute before:bottom-[-2px] left-[0px] before:w-0 before:invisible before:transition-all before:delay-150 before:ease-in-out before:delay-0 before:h-[2px] text-white/[.8] font-[Poppins,sans-serif] text-[16px] hover:text-white hover:before:visible hover:before:w-[30px] ml-[30px] cursor-pointer
+    {{curNavItem == 'Home' ? 'before:visible before:w-[30px] !important' : 'before:invisible'}}
+    "  (click)="setNavItem('Home')"
   >
     Contact
   </a>
