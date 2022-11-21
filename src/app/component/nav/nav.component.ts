@@ -14,9 +14,9 @@ export class NavComponent implements OnInit {
   id! : number;
   curNavItem : string = "Home";
   constructor(private Location : Location) {
-    console.log(this.Location.path());
+
     this.curNavItem = this.Location.path().slice(1);
-    console.log(this.curNavItem);
+
    }
 
   ngOnInit(): void {
